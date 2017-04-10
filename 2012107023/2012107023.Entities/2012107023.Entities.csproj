@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{67642AE6-E61C-4FDC-B0BD-FB4AEE68CAE2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{E700C853-CC5B-4B33-B742-88AE537CAE66}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2012107023</RootNamespace>
-    <AssemblyName>2012107023</AssemblyName>
+    <RootNamespace>_2012107023.Entities</RootNamespace>
+    <AssemblyName>2012107023.Entities</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,17 +39,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AdministradorEquipo.cs" />
+    <Compile Include="AdministradorLinea.cs" />
+    <Compile Include="CentroAtencion.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Contrato.cs" />
+    <Compile Include="Departamento.cs" />
+    <Compile Include="Direccion.cs" />
+    <Compile Include="Distrito.cs" />
+    <Compile Include="EquipoCelular.cs" />
+    <Compile Include="EstadoEvaluacion.cs" />
+    <Compile Include="Evaluacion.cs" />
+    <Compile Include="LineaTelefonica.cs" />
+    <Compile Include="Plan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\2012107023.Entities\2012107023.Entities.csproj">
-      <Project>{e700c853-cc5b-4b33-b742-88ae537cae66}</Project>
-      <Name>2012107023.Entities</Name>
-    </ProjectReference>
+    <Compile Include="Provincia.cs" />
+    <Compile Include="TipoEvaluacion.cs" />
+    <Compile Include="TipoLinea.cs" />
+    <Compile Include="TipoPago.cs" />
+    <Compile Include="TipoPlan.cs" />
+    <Compile Include="TipoTrabajador.cs" />
+    <Compile Include="Trabajador.cs" />
+    <Compile Include="Ubigeo.cs" />
+    <Compile Include="Venta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
